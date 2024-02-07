@@ -45,4 +45,4 @@ function deleteInvalids(array) {
 
 
 }
-console.log(deleteInvalids([23, 342, "hi", "hello", 34, 56, 32, NaN, 5667]));
+// console.log(deleteInvalids([23, 342, "hi", "hello", 34, 56, 32, NaN, 5667]));

@@ -45,4 +45,4 @@ function password(obj) {
         return "invalid";
     }
 }
-console.log(password({ name: "kolimuddi", brithYear: 1999, siteName: "google" }));
+// console.log(password({ name: "kolimuddi", brithYear: 1999, siteName: "google" }));

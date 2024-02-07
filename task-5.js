@@ -30,7 +30,31 @@
 // solve---------------------
 
 function monthlySavings(arr, livingCost) {
+    let totalAmount = 0;
+    let sum = 0;
+    let daruan = true;
+    if (!Array.isArray(arr) || typeof(livingCost) != "number") {
+        daruan = false;
+    }
+    let savings;
+    if (daruan) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 3000) {
+                totalAmount = arr[i] - arr[i] * 20 / 100;
 
+            } else {
+                totalAmount = arr[i];
+            }
+            sum = sum + totalAmount;
+        }
+        savings = sum - livingCost;
+        return savings;
+    }
+    if (savings <= 0 && daruan === true) {
+        return "earn more";
 
-
+    } else {
+        return "invalid";
+    }
 }
+// console.log(monthlySavings([3000, 2000, 3000], 5400))
